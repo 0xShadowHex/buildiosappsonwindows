@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCodeWin - Documentation</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .docs-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .docs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .doc-item {
+            background-color: var(--bg-dark);
+            border: 1px solid var(--border-dark);
+            border-radius: 8px;
+            padding: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .doc-item:hover {
+            border-color: var(--accent-blue);
+            transform: translateY(-5px);
+            background-color: rgba(30, 144, 255, 0.05);
+        }
+
+        .doc-title {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+            color: var(--accent-blue);
+        }
+
+        .doc-item p {
+            color: var(--text-gray);
+            line-height: 1.8;
+        }
+
+        .docs-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .docs-section {
+            min-height: 100vh;
+            padding: 10vh 40px;
+            background-color: var(--bg-black);
+            border-top: 1px solid var(--border-dark);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="resources/icon.jpg" alt="iCodeWin Logo" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="#why-icodwin">Why iCodeWin</a></li>
+                <li><a href="index.html#code-examples">About</a></li>
+                <li><a href="docs.html">Docs</a></li>
+                <li><a href="https://icodewin.vercel.app/" class="nav-cta">Start Building</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Documentation Section -->
+    <section class="docs-section" id="documentation">
+        <div class="docs-container">
+            <h2>Documentation</h2>
+            <div class="docs-grid" id="docsGrid">
+                <div class="doc-item">
+                    <h3 class="doc-title">Getting Started</h3>
+                    <p class="content">Learn how to set up iCodeWin and build your first iOS app on Windows.</p>
+                </div>
+                
+                <div class="doc-item">
+                    <h3 class="doc-title">API Reference</h3>
+                    <p class="content">Complete API documentation for all iCodeWin functions and methods.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why iCodeWin Section -->
+    <section class="details" id="why-icodwin">
+        <div class="details-container">
+            <h2>Why iCodeWin</h2>
+            <div class="details-grid">
+                <div class="detail-item">
+                    <h3>⚡ Lightning Fast Builds</h3>
+                    <p>Optimized cloud infrastructure ensures your iOS apps compile in seconds, not minutes.</p>
+                </div>
+                
+                <div class="detail-item">
+                    <h3>🔒 Enterprise Security</h3>
+                    <p>Your code stays secure with end-to-end encryption and compliance with industry standards.</p>
+                </div>
+                
+                <div class="detail-item">
+                    <h3>📱 Multi-Framework Support</h3>
+                    <p>Build with Swift, React Native, Flutter, or Xamarin. Choose your preferred technology stack.</p>
+                </div>
+                
+                <div class="detail-item">
+                    <h3>🚀 Instant Deployment</h3>
+                    <p>Deploy directly to TestFlight or the App Store with automated certificate management.</p>
+                </div>
+                
+                <div class="detail-item">
+                    <h3>💻 Windows Native</h3>
+                    <p>Develop iOS apps on your Windows machine. No expensive Mac hardware required.</p>
+                </div>
+                
+                <div class="detail-item">
+                    <h3>📊 Real-time Monitoring</h3>
+                    <p>Track build status, deployment progress, and app performance in real-time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Integrated into Docs Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#pricing">Pricing</a></li>
+                        <li><a href="docs.html">Documentation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html#code-examples">About</a></li>
+                        <li><a href="index.html#blog">Blog</a></li>
+                        <li><a href="index.html#cta">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#privacy">Privacy</a></li>
+                        <li><a href="#terms">Terms</a></li>
+                        <li><a href="#security">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 iCodeWin by ShadowHex. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Auto-sort documentation items alphabetically by title
+        document.addEventListener('DOMContentLoaded', function() {
+            const docsGrid = document.getElementById('docsGrid');
+            const docItems = Array.from(docsGrid.querySelectorAll('.doc-item'));
+            
+            // Sort items alphabetically by title
+            docItems.sort((a, b) => {
+                const titleA = a.querySelector('.doc-title').textContent.trim().toLowerCase();
+                const titleB = b.querySelector('.doc-title').textContent.trim().toLowerCase();
+                return titleA.localeCompare(titleB);
+            });
+            
+            // Clear the grid and re-insert sorted items
+            docsGrid.innerHTML = '';
+            docItems.forEach(item => {
+                docsGrid.appendChild(item);
+            });
+        });
+    </script>
+</body>
+</html>

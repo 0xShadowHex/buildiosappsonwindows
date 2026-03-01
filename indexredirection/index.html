@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCodeWin - Build iOS Apps on Windows</title>
+    <link rel="stylesheet" href="style.css">
+    <meta property="og:site_name" content="Build iOS apps on Windows">
+    <meta name="description" content="build iOS apps on Windows free no mac">
+    <meta property="og:image" content="https://buildiosappsonwindows.vercel.app/resources/logo.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:description" content="Build iOS apps in browser free no mac">
+    <link rel="icon" href="./resources/icon.jpg" type="image/x-icon">
+</head>
+
+<body id="top">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#top"><img src="resources/icon.jpg" alt="iCodeWin Logo" class="logo-img"></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#why-icodwin">Why iCodeWin?</a></li>
+                <li><a href="#code-examples">About</a></li>
+                <li><a href="docs.html">Docs</a></li>
+                <li><a href="https://icodewin.vercel.app/" class="nav-cta">Start Building</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <img src="resources/logo.png" alt="iCodeWin Logo" class="hero-logo">
+                <p class="hero-subtitle">Build native iOS applications directly from your browser. No Mac required. No
+                    more build errors! We also guarantee privacy, speed and being forever free without any hidden fees. </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="window.location.href='https://icodewin.vercel.app/'">Start
+                        Building</button>
+                    <button class="btn btn-secondary" onclick="window.location.href='#features'">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <div class="hero-arrow">↓</div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="features-container">
+            <h2>Click, click, done.</h2>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-number">1</div>
+                    <h3>Create a new project</h3>
+                    <p>Click the + icon and create a new project</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-number">2</div>
+                    <h3>Code your app</h3>
+                    <p>You can code your app while enjoying a live preview of an iPhone and having a monaco editor that
+                        has text highlighting.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-number">3</div>
+                    <h3>Download unsigned .ipa</h3>
+                    <p>Once youre done developing your application, you can simply press the download button and
+                        download your fully working unsigned .ipa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why iCodeWin Section -->
+    <section class="details" id="why-icodwin">
+        <div class="details-container">
+            <h2>Why choose us?</h2>
+            <div class="details-grid">
+                <div class="detail-item">
+                    <h3>Fast Builds</h3>
+                    <p>We use powerful cloud build servers and optimized build settings to produce your .ipa in seconds
+                        instead of minutes</p>
+                </div>
+
+                <div class="detail-item">
+                    <h3>No more Errors!</h3>
+                    <p>We simplified building iOS apps for the user so that no more build errors can occur. If you get
+                        another build error than failed to fetch or unstable internet, I will publicly apologise</p>
+                </div>
+
+                <div class="detail-item">
+                    <h3>Live build log</h3>
+                    <p>We use snack notifications to let you know about the status of your build.</p>
+                </div>
+
+                <div class="detail-item">
+                    <h3>Push notification support</h3>
+                    <p>Something we are extremely proud of is our push notification support. I myself developed
+                        notification.js lib that you can link to use the push() function over JS x Swift</p>
+                </div>
+
+                <div class="detail-item">
+                    <h3>Constant updates</h3>
+                    <p>My github has 53 commits so far and there will be more every week, fixing bugs, optimizing page
+                        looks and layout.</p>
+                </div>
+
+                <div class="detail-item">
+                    <h3>Free, open-source and privacy-oriented.</h3>
+                    <p>We do not store your projects or data, your projects live inside your LocalStorage, get sent to
+                        server for sompiling and get deleted immediately. The code is on my GitHub:
+                        github.com/0xShadowHex</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Examples Section -->
+    <section class="code-examples" id="code-examples">
+        <div class="code-container">
+            <h2>Use Web (HTML, CSS and JS) in your app</h2>
+
+            <div class="code-grid">
+                <div class="code-card">
+                    <div class="code-header">HTML5</div>
+                    <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Default-screen&lt;/title&gt;
+    &lt;link rel="stylesheet" href="../css/style.css"&gt;
+    &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+    &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+    &lt;link href="https://fonts.googleapis.com/css2?family=Borel&amp;display=swap" rel="stylesheet"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;h1 class="welcome-screen"&gt;hello&lt;/h1&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Link notification library to app, for photo etc use input until next update--&gt;
+    &lt;script src="../js/notification.js"&gt;&lt;/script&gt;
+    &lt;script src="../js/script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+                </div>
+
+                <div class="code-card">
+                    <div class="code-header">CSS3</div>
+                    <pre><code>body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #002fff 0%, #cc0099 100%);
+    min-height: 95.2vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.welcome-screen{
+    font-size: 2.5em;
+    font-family: "Borel", cursive;
+}
+.welcome-screen::selection{
+    background: none;
+}</code></pre>
+                </div>
+
+                <div class="code-card">
+                    <div class="code-header">JS (ES2025)</div>
+                    <pre><code>//waits 7 seconds, then sends a push notification "Greetings from myself" if app not curently opened
+push(7, "Greetings from 0xShadowHex");</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="cta">
+        <div class="cta-container">
+            <h2>Start building with iCodeWin today!</h2>
+            <p>No hidden fees, always free, open-source and privacy-oriented</p>
+            <button class="btn btn-primary btn-large" onclick="window.location.href='https://icodewin.vercel.app/'">Get
+                Started for Free</button>
+        </div>
+
+        <!-- Integrated Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#pricing" onclick="alert('Free!'); return false;">Pricing</a></li>
+                            <li><a href="docs.html">Documentation</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#top">About</a></li>
+                            <li><a href="discord.gg/icodewin">Discord</a></li>
+                            <li><a href="mailto:shadowx.hub@gmail.com">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#why-icodwin">Privacy</a></li>
+                            <li><a href="#terms" onclick="alert('You may read terms of service in the footer of iCodeWin main site'); return false;">Terms</a></li>
+                            <li><a href="#security" onclick="alert('Backend security tested by several pentesters'); return false;">Security</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2026 iCodeWin by ShadowHex. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

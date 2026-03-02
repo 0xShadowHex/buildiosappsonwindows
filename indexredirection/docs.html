@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iCodeWin - Documentation</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./resources/icon.jpg" type="image/x-icon">
     <style>
         .docs-container {
             max-width: 1200px;
@@ -61,6 +62,12 @@
             flex-direction: column;
             justify-content: center;
         }
+        li{
+            color: #a0a0a0;
+        }
+        a{
+            color: dodgerblue;
+        }
     </style>
 </head>
 <body>
@@ -72,7 +79,7 @@
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html#features">Features</a></li>
-                <li><a href="#why-icodwin">Why iCodeWin</a></li>
+                <li><a href="index.html#why-icodwin">Why iCodeWin?</a></li>
                 <li><a href="index.html#code-examples">About</a></li>
                 <li><a href="docs.html">Docs</a></li>
                 <li><a href="https://icodewin.vercel.app/" class="nav-cta">Start Building</a></li>
@@ -87,50 +94,32 @@
             <div class="docs-grid" id="docsGrid">
                 <div class="doc-item">
                     <h3 class="doc-title">Getting Started</h3>
-                    <p class="content">Learn how to set up iCodeWin and build your first iOS app on Windows.</p>
+                    <p class="content"><ol>
+                        <li>Open iCodeWin editor by clicking "Start Building"</li>
+                        <li>Create a new project and name it in the prompt</li>
+                        <li>Code your Application in HTML, CSS and Javascript X Swift while enjoying our live preview</li>
+                        <li>Once you are done, click "Download .ipa" to get your unsigned .ipa file</li>
+                        <li>Sideload your .ipa file using the tools listed in sideload section of Docs</li>
+                    </ol></p>
                 </div>
                 
                 <div class="doc-item">
-                    <h3 class="doc-title">API Reference</h3>
-                    <p class="content">Complete API documentation for all iCodeWin functions and methods.</p>
+                    <h3 class="doc-title">Link notification API to project</h3>
+                    <p class="content">Link notification API as first link in body for it to work. It is pre-linked by default. <br>Code snippet: <br> &lt;script src=&quot;../js/notification.js&quot;&gt;&lt;/script&gt;</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why iCodeWin Section -->
-    <section class="details" id="why-icodwin">
-        <div class="details-container">
-            <h2>Why iCodeWin</h2>
-            <div class="details-grid">
-                <div class="detail-item">
-                    <h3>⚡ Lightning Fast Builds</h3>
-                    <p>Optimized cloud infrastructure ensures your iOS apps compile in seconds, not minutes.</p>
+                <div class="doc-item">
+                    <h3 class="doc-title">Common errors:</h3>
+                    <p class="content">Common errors are: <br> Unstable Internet: Fixed by connecting to a stable Wi-Fi. <br>Failed to fetch: Fixed by waiting for us to get our servers back online (usually done within 48h)</p>
                 </div>
-                
-                <div class="detail-item">
-                    <h3>🔒 Enterprise Security</h3>
-                    <p>Your code stays secure with end-to-end encryption and compliance with industry standards.</p>
-                </div>
-                
-                <div class="detail-item">
-                    <h3>📱 Multi-Framework Support</h3>
-                    <p>Build with Swift, React Native, Flutter, or Xamarin. Choose your preferred technology stack.</p>
-                </div>
-                
-                <div class="detail-item">
-                    <h3>🚀 Instant Deployment</h3>
-                    <p>Deploy directly to TestFlight or the App Store with automated certificate management.</p>
-                </div>
-                
-                <div class="detail-item">
-                    <h3>💻 Windows Native</h3>
-                    <p>Develop iOS apps on your Windows machine. No expensive Mac hardware required.</p>
-                </div>
-                
-                <div class="detail-item">
-                    <h3>📊 Real-time Monitoring</h3>
-                    <p>Track build status, deployment progress, and app performance in real-time.</p>
+                <div class="doc-item">
+                    <h3 class="doc-title">Sideloading tools</h3>
+                    <p class="content"><ol>
+                        <li>Our partner, <a href="https://sideload.pages.dev/"> Scarlet</a></li>
+                        <li>Tool to sideload from PC, <a href="https://github.com/nab138/iloader">iLoader</a></li>
+                        <li>Use PC once, refresh with VPN: <a href="https://sidestore.io/">SideStore</a></li>
+                        <li>Use PC once, refresh over home Wi-Fi: <a href="https://sideloadly.io/">Sideloadly</a></li>
+                        <li>Refresh by connecting PC and Phone with a cable every 7 days: <a href="https://altstore.io/">AltStore</a></li>
+                    </ol></p>
                 </div>
             </div>
         </div>
@@ -169,7 +158,7 @@
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2024 iCodeWin by ShadowHex. All rights reserved.</p>
+                <p>&copy; 2026 iCodeWin by ShadowHex. All rights reserved.</p>
             </div>
         </div>
     </footer>

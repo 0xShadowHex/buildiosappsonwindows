@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.buildiosappsonwindows.vercel.app"
+        }
+      ],
+      "destination": "https://buildiosappsonwindows.vercel.app/:path*",
+      "permanent": true
+    }
+  ]
+}
